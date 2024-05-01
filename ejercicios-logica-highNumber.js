@@ -4,7 +4,7 @@ let lista = [];
 let count = 0;
 while (count < 10){
     input = prompt("Introduce el número");
-    lista.push(input);
+    lista.push(parseInt(input));
     count++
 } 
 console.log(lista);
@@ -15,6 +15,7 @@ function mayorMenor(list){
     let numMax = 0;
     for (i=0; i < list.length; i++){
         if (list[i] > numMax) {
+            console.log(list[i] > numMax);
             numMax = list[i];
             console.log(numMax);
         }
